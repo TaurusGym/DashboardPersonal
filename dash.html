@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="dash.css">
+    <!-- GOOGLE FONTS POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="image/icon.ico" type="image/x-icon">
+    <!-- JAVASCRIPT -->
+    <script src="dash.js" defer></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <section id="menu">
+        <div class="logo">
+            <img src="image/logo.png" alt="logo">
+        </div>
+
+        <div class="items">
+            <li class="active-btn">
+                <i class="btn fa-solid fa-house"></i>
+                <a href="#" class="btn">Home</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-users"></i>
+                <a href="#">Alunos</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-dumbbell"></i>
+                <a href="#">Treinos</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <a href="#">Sair</a>
+            </li>
+        </div>
+    </section>
+
+       <!-- header --> 
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <div>
+                        <i class="fas fa-bars" id="menu-btn"></i>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Pesquisar">
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <i class="fa fa-bell"></i>
+                    <img src="image/personal.jpg" alt="personal" loading="lazy">
+                </div>
+            </div>
+           
+            <!-- MAIN -->
+            <h3 class="title">
+                Bem-Vindo, Nome do Personal!
+            </h3>
+
+            <div class="values">
+                <div class="val-box">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>15</h3>
+                        <span>Novos Alunos</span>
+                    </div>
+                </div>
+
+                <div class="val-box">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <h3>35</h3>
+                        <span>Total de Alunos</span>
+                    </div>
+                </div>
+
+                <div class="val-box">
+                    <i class="fa-solid fa-fire"></i>
+                    <div>
+                        <h3>20</h3>
+                        <span>Alunos Ativos</span>
+                    </div>
+                </div>
+
+                <div class="val-box">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <div>
+                        <h3>6</h3>
+                        <span>Novos Treinos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABLE -->
+            <div class="board">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Aluno</td>
+                            <td>Telefone</td>
+                            <td>E-mail</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="people">
+                                <img src="image/man1.jpg" alt="people-img" loading="lazy">
+                                <h5>Lucas Oliveira</h5>
+                            </td>
+                            <td class="tel">
+                                <h5>(11) 91234-5678</h5>
+                            </td>
+                            <td class="email">
+                                <h5>lucas.oliveira@example.com</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="people">
+                                <img src="image/man3.jpg" alt="people-img" loading="lazy">
+                                <h5>Carlos Souza</h5>
+                            </td>
+                            <td class="tel">
+                                <h5>(31) 93456-7890</h5>
+                            </td>
+                            <td class="email">
+                                <h5>carlos.souza@example.com</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="people">
+                                <img src="image/woman3.jpg" alt="people-img" loading="lazy">
+                                <h5>Fernanda Lima</h5>
+                            </td>
+                            <td class="tel">
+                                <h5> (41) 94567-8901</h5>
+                            </td>
+                            <td class="email">
+                                <h5> fernanda.lima@example.com</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="people">
+                                <img src="image/man2.jpg" alt="people-img" loading="lazy">
+                                <h5>Pedro Alves</h5>
+                            </td>
+                            <td class="tel">
+                                <h5>(51) 95678-9012</h5>
+                            </td>
+                            <td class="email">
+                                <h5>pedro.alves@example.com</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="people">
+                                <img src="image/woman2.jpg" alt="people-img" loading="lazy">
+                                <h5>Juliana Rocha</h5>
+                            </td>
+                            <td class="tel">
+                                <h5> (81) 98901-2345</h5>
+                            </td>
+                            <td class="email">
+                                <h5> juliana.rocha@example.com</h5>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="people">
+                                <img src="image/man4.jpg" alt="people-img" loading="lazy">
+                                <h5>Gustavo Ferreira</h5>
+                            </td>
+                            <td class="tel">
+                                <h5>(91) 99012-3456</h5>
+                            </td>
+                            <td class="email">
+                                <h5> gustavo.ferreira@example.com</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        var menuButton = document.getElementById('menu-btn');
+        var menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+});
+        </script>
+</body>
+</html>
